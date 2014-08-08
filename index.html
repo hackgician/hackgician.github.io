@@ -1,44 +1,46 @@
----
-layout: default
-title: Home
----
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
 
-<link rel = "stylesheet" href = "animate.css"/>
+	<body>
+		<div class="jumbotron">
+			<h1 class="animated wow fadeInup">Hi, <span class="animated wow fadeInUp" data-wow-delay="1s">we're Hackgician</span></h1>
+			<h3 class="animated wow fadeInUp" data-wow-delay="2000ms">We like to code</h3>
+			<br><br><br><br><br><hr class="animated zoomIn wow" data-wow-delay="3s"><br><br><br><br><br>
+			<h3><a href="http://fb.com/Hackgician-apps" class="animated wow fadeInUp" data-wow-delay="4s"><span class="fa-stack fa-lg">
+			  	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  				<i class="fa fa-facebook fa-stack-1x"></i>
+  				<h4 style="display:none;" id="facebook">Facebook</h4>
+				</span></a>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post wow fadeInUp" data-wow-offset = "100">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+				<a href="http://twitter.com/hackgician" class="animated wow fadeInUp" data-wow-delay="4250ms"><span class="fa-stack fa-lg">
+			  	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  				<i class="fa fa-twitter fa-stack-1x"></i>
+  				<h4 style="display:none;" id="twitter">Twitter</h4>
+				</span></a>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+				<a href="http://instagram.com/hackgician" class="animated wow fadeInUp" data-wow-delay="4500ms"><span class="fa-stack fa-lg">
+			  	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  				<i class="fa fa-instagram fa-stack-1x"></i>
+  				<h4 style="display:none;" id="insta">Instagram</h4>
+				</span></a>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+				<a href="https://www.youtube.com/channel/UCEK8v04VPJxd952beMSTqng" class="animated wow fadeInUp" data-wow-delay="4750ms"><span class="fa-stack fa-lg">
+			  	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  				<i class="fa fa-youtube fa-stack-1x"></i>
+  				<h4 style="display:none;" id="youtube">YouTube</h4>
+				</span></a>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+				<a href="http;//hackgician.github.io" class="animated wow fadeInUp" data-wow-delay="5s"><span class="fa-stack fa-lg">
+			  	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  				<i class="fa fa-pencil fa-stack-1x"></i>
+  				<h4 style="display:none;" id="blog">Blog</h4>
+				</span></a>
+			</h3>
+		</div>
 
-  <script src="WOW.js"></script>
-  <script>
-   new WOW().init();
-  </script>
+		<script type="text/javascript" src="js/WOW.js"></script>
+		<script>new WOW().init();</script>
+	</body>
+</html>
